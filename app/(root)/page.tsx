@@ -7,30 +7,36 @@ export default async function Home({
   searchParams: Promise<{ query?: string }>;
 }) {
   const query = (await searchParams).query;
-  const posts = [
+    const posts = [
     {
-      _creeatedAt: "Yesterday",
+      _creeatedAt: new Date(),
       view: 55,
-      author: { _id: 1 },
+      title: 'this is my unick ida',
+      author: { _id: 1, name: 'farcy' },
       _id: 1,
       description: "This is a description.",
-      image: "https://ibb.co.com/KKxWTPS",
+      image: "https://i.ibb.co.com/6X0FjML/Screenshot-2.png",
+      category: "AI",
     },
     {
-      _creeatedAt: "Yesterday",
-      view: 55,
-      author: { _id: 1 },
+      _creeatedAt: new Date(),
+      view: 39,
+      title: 'this is my unick ida2',
+      author: { _id: 1 , name: 'thaGreate' },
       _id: 2,
       description: "This is a description.",
-      image: "https://ibb.co.com/KKxWTPS",
+      image: "https://i.ibb.co.com/6X0FjML/Screenshot-2.png",
+      category: "Robots",
     },
     {
-      _creeatedAt: "Yesterday",
-      view: 55,
-      author: { _id: 1 },
+      _creeatedAt: new Date(),
+      view: 25,
+      title: 'this is my unick ida3',
+      author: { _id: 1 , name: 'intheWold' },
       _id: 3,
       description: "This is a description.",
-      image: "https://ibb.co.com/KKxWTPS",
+      image: "https://i.ibb.co.com/6X0FjML/Screenshot-2.png",
+      category: "tachnoligy",
     },
   ];
 
